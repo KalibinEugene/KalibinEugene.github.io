@@ -5,7 +5,7 @@ html{
 }
 body{
 	width: 100%;
-	line-height: 1.5em;
+	line-height: 1.55em;
 	background: url(../images/bg.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -76,4 +76,19 @@ section{
 	float: right;
 	padding: 0px 20px;
 	background-color: #ffffff;
+}
+#toTop {
+	position:fixed;
+	bottom:30px; /* отступ кнопки от нижнего края страницы*/
+	right:30px;
+	cursor:pointer;
+	display:none;
+}
+.anchor{
+	font-size: 12px;
+	font-style: italic;
+	margin-right: 10px;
+}
+.anchor:hover{
+	text-decoration: underline;
 }
