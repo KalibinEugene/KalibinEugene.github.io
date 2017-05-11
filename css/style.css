@@ -5,7 +5,7 @@ html{
 }
 body{
 	width: 100%;
-	line-height: 1.55em;
+	line-height: 1.6em;
 	background: url(../images/bg.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -30,10 +30,37 @@ a{
 	text-decoration: none;
 	color: rgba(81,72,67,1);
 }
-ul{
+.nav{
 	list-style: none;
 }
 /***** End of General Styles *****/
+
+/***** Table Styles *****/
+table{
+	border: 1px solid rgba(81,72,67, 1);
+	border-collapse: collapse;
+	margin: 0px 0px 10px 0px;
+	padding: 30px;
+}
+caption{
+	background-color: #eeeeee;
+	padding: .35em;
+	border: 1px solid rgba(81,72,67, 1);
+	border-bottom: none;
+}
+tr{
+	border: 1px solid rgba(81,72,67, 1);
+	padding: .35em;
+}
+th{
+	text-align: center;
+}
+th, td{
+	padding: .625em;
+	vertical-align: top;
+	border: 1px solid rgba(81,72,67, 1);
+}
+/***** End of Table Styles *****/
 
 /***** Index Page Styles *****/
 .center{
@@ -58,7 +85,7 @@ ul{
 /***** End of Index Page Styles *****/
 
 aside{
-	width: 25%;
+	width: 30%;
 	float: left;
 }
 aside li a{
@@ -68,24 +95,45 @@ aside li a{
 	border: 1px solid rgba(81,72,67,1);
 	border-radius: 10px 0px 0px 10px;
 }
+aside ul ul{
+	margin-left: -10px;
+}
 section{
 	margin-top: 16px;
 	box-sizing: border-box;
 	border: 1px solid rgba(81,72,67,1);
-	width: 75%;
+	width: 70%;
 	float: right;
 	padding: 0px 20px;
 	background-color: #ffffff;
+	margin-bottom: 50px;
 }
+.theory-list li{
+	margin-bottom: 15px;
+}
+i{
+	border: 1px solid rgba(81,72,67,0.5);
+	padding: 2px;
+}
+
+/***** Button Style *****/
 #toTop {
 	position:fixed;
 	bottom:30px; /* отступ кнопки от нижнего края страницы*/
 	right:30px;
 	cursor:pointer;
 	display:none;
+	padding: 5px 15px;
+	background-color: rgba(81,72,67,1);
+	color: #ffffff;
+}
+#toTop:hover{
+	background-color: #ffffff;
+	color: rgba(81,72,67,1);
+	transition: 0.6s all;
 }
 .anchor{
-	font-size: 12px;
+	font-size: 16px;
 	font-style: italic;
 	margin-right: 10px;
 }

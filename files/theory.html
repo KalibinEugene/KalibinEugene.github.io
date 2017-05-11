@@ -6,18 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/style.css">
-<script src="../js/jquery-3.2.1.js"></script>
-<script src="../js/jquery-ui.js"></script>
-<script>
-	$( function() {
-		$( "#accordion" ).accordion({
-			active: false,
-			collapsible: true,
-		});
-	});
-</script>
+<style type="text/css">
+	a{
+		display: block;
+	}
+</style>
 </head>
-
 <body>
 	<div class="wrapper">
 		<div class="container">
@@ -26,25 +20,21 @@
 					<ul>
 						<li><a href="../index.html" class="basic">Главная</a></li>
 						<li><a href="intro.html" class="basic">Введение</a></li>
-						<li><a href="/" class="basic active">Теоретический раздел</a></li>
-						<li><a href="" class="basic">Полезная информация</a></li>
+						<li><a href="/" class="basic active">Теоретический раздел</a>
+						<li><a href="inform.html" class="basic">Полезная информация</a></li>
 					</ul>
 				</aside>
 				<section>
-					<h1>Введение</h1>
-					<ul id="accordion">
-						<li style="list-style: circle;"><a href="">Теоретические основы</a>
-							<ul>
-								<li><a href="theory1.html">Понятие системы качества и сетрификации трубной продукции</a></li>
-								<li><a href="">Понятие разрушающего и неразрушающего контроля</a></li>
-								<li><a href="">Средства и методы контроля качества трубной продукции</a></li>
-							</ul>
-						</li>
-						<li><a href="">Нормативная документация</a></li>
-						<li><a href="">Структура гидропресса, порядок испытаний</a></li>
-						<li><a href="">Рабочее место оператора</a></li>
-						<li><a href="">Работа прессовщика</a></li>
-						<li><a href="">Техника безопасности и охрана труда</a></li>
+					<h1>Теоретический раздел</h1>
+					<ul class="theory-list">
+						<li><a href="theory1.html" class="basic">Понятие системы качества</a><li>
+						<li><a href="theory2.html" class="basic">Понятие разрушающего и неразрушающего контроля</a><li>
+						<li><a href="" class="basic">Основные методы контроля качества</a><li>
+						<li><a href="" class="basic">Нормативная документация</a><li>
+						<li><a href="" class="basic">Структура гидропресса, порядок испытаний</a><li>
+						<li><a href="" class="basic">Рабочее место оператора</a><li>
+						<li><a href="" class="basic">Работа прессовщика</a><li>
+						<li><a href="" class="basic">Техника безопасности</a><li>
 					</ul>
 				</section>
 			</div>
@@ -52,4 +42,3 @@
 	</div>
 </body>
 </html>
-
