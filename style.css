@@ -1,0 +1,216 @@
+/* CSS Document */
+/***** General Styles *****/
+html{
+	height: 100%;
+}
+body{
+	width: 100%;
+	line-height: 1.6em;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: rgba(81,72,67,1);
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+}
+.wrapper{
+	width: 100%;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+h1{
+	text-transform: uppercase;
+}
+h1, h2, h3{
+	line-height: 1.25em;
+}
+p{
+	margin: 0px 0px 6px 0px;
+	text-indent: 25px;
+}
+h4{
+	margin: 15px 0px 0px;
+	text-indent: 25px;
+}
+a{
+	text-decoration: none;
+	color: rgba(81,72,67,1);
+}
+.nav{
+	list-style: none;
+}
+/***** End of General Styles *****/
+
+/***** Table Styles *****/
+table{
+	border: 1px solid rgba(81,72,67, 1);
+	border-collapse: collapse;
+	margin: 0px 0px 10px 0px;
+	padding: 30px;
+	line-height: 1em;
+}
+caption{
+	background-color: #eeeeee;
+	padding: .35em;
+	border: 1px solid rgba(81,72,67, 1);
+	border-bottom: none;
+}
+tr{
+	border: 1px solid rgba(81,72,67, 1);
+	padding: .35em;
+}
+th, td{
+	padding: .625em;
+	vertical-align: top;
+	border: 1px solid rgba(81,72,67, 1);
+	text-align: center;
+}
+/***** End of Table Styles *****/
+
+/***** Index Page Styles *****/
+.center{
+	text-align: center;
+	margin-top: 200px;
+	background-color: #ffffff;
+	padding: 50px;
+}
+.center h1, .center h3{
+	margin-bottom: 50px;
+}
+.basic{
+	padding: 5px 15px;
+	border: 1px solid rgba(81,72,67,1);
+	background-color: #ffffff;
+}
+.basic:hover, .active{
+	background-color: rgba(81,72,67,1);
+	color: #ffffff;
+	transition: 0.6s all;
+}
+/***** End of Index Page Styles *****/
+
+aside{
+	width: 27%;
+	float: left;
+	position: fixed;
+	line-height: 1em;
+	text-align: left;
+}
+aside li a{
+	display: block;
+	padding: 5px 10px;
+	background-color: #ffffff;
+	border: 1px solid rgba(81,72,67,1);
+	border-radius: 10px 0px 0px 10px;
+}
+aside ul ul{
+	margin-left: -10px;
+}
+section{
+	margin-top: 16px;
+	box-sizing: border-box;
+	border: 1px solid rgba(81,72,67,1);
+	width: 70%;
+	float: right;
+	padding: 0px 20px;
+	background-color: #ffffff;
+	margin-bottom: 50px;
+}
+.theory-list li{
+	margin-bottom: 15px;
+}
+i{
+	border: 1px solid rgba(81,72,67,0.5);
+	padding: 2px;
+}
+
+/***** Button Style *****/
+#toTop {
+	position:fixed;
+	bottom:30px; /* отступ кнопки от нижнего края страницы*/
+	right:30px;
+	cursor:pointer;
+	display:none;
+	padding: 5px 15px;
+	background-color: rgba(81,72,67,1);
+	color: #ffffff;
+}
+#toTop:hover{
+	background-color: #ffffff;
+	color: rgba(81,72,67,1);
+	transition: 0.6s all;
+}
+.anchor{
+	font-size: 16px;
+	font-style: italic;
+	margin-right: 10px;
+}
+.anchor:hover{
+	text-decoration: underline;
+}
+
+/***** Tabs Style *****/
+#tabs{
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+#tabs ul{
+	margin: 0;
+	padding: .2em .2em 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+	border: 1px solid #dddddd;
+	background: #e9e9e9;
+	color: #333333;
+	font-weight: bold;
+}
+#tabs ul:before,
+#tabs ul:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+#tabs ul:after {
+	clear: both;
+}
+#tabs ul li{
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+	border: 1px solid #c5c5c5;
+	background: #f6f6f6;
+	font-weight: normal;
+	color: #454545;
+}
+#tabs ul li a{
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+#tabs ul li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+#tabs ul li.ui-tabs-active a, #tabs ul li a:hover{
+	background-color: rgba(81,72,67,1);
+	color: #ffffff;
+	transition: 0.6s all;
+}
+#tabs div{
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+	color: #454545;
+	text-decoration: none;
+}
+/***** End of Tabs Style *****/
