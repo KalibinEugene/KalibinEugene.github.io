@@ -7,7 +7,18 @@
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/style.css">
 <script src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
 <script>
+	$(document).ready(function(){
+		
+		$("#accordion").accordion({
+			collapsible: true,
+		});
+		$("#accordion > li").click(function(){
+			var link = $(this).find('a').attr('href');
+			window.location = link;
+		});
+	});
 	$(function() {
 		$(window).scroll(function() {
 			if($(this).scrollTop() != 0) {
@@ -20,6 +31,7 @@
 			$('body,html').animate({scrollTop:0},800);
 		});
 	});
+
 </script>
 </head>
 
@@ -28,22 +40,21 @@
 		<div class="container">
 			<div style="margin-top: 50px;">
 				<aside>
-					<ul class="nav">
+					<ul class="nav" id="accordion">
 						<li><a href="../index.html" class="basic">Главная</a></li>
 						<li><a href="intro.html" class="basic">Введение</a></li>
-						<li><a href="" class="basic">Теоретический раздел</a>
-							<ul class="nav">
-								<li><a href="theory1.html" class="basic">Понятие системы качества и сетрификации трубной продукции</a></li>
-								<li><a href="/" class="basic active">Понятие разрушающего и неразрушающего контроля</a></li>
-								<li><a href="theory3.html" class="basic">Средства и методы контроля качества трубной продукции</a></li>
-								<li><a href="docs.html" class="basic">Нормативная документация</a></li>
-								<li><a href="structure.html" class="basic">Структура гидропресса, порядок испытаний</a></li>
-								<li><a href="workplace.html" class="basic">Рабочее место оператора</a></li>
-								<li><a href="operator.html" class="basic">Работа прессовщика</a></li>
-								<li><a href="safety.html" class="basic">Техника безопасности и охрана труда</a>
-								</li>
-							</ul>
-						</li>
+						<h3 style="margin: 0px; font-weight: normal; font-size: 16px;"><li><a href="" class="basic">Теоретический раздел</a></li></h3>
+						<ul class="nav">
+							<li><a href="theory1.html" class="basic">Понятие системы качества и сетрификации трубной продукции</a></li>
+							<li><a href="/" class="basic active">Понятие разрушающего и неразрушающего контроля</a></li>
+							<li><a href="theory3.html" class="basic">Средства и методы контроля качества трубной продукции</a></li>
+							<li><a href="docs.html" class="basic">Нормативная документация</a></li>
+							<li><a href="structure.html" class="basic">Структура гидропресса, порядок испытаний</a></li>
+							<li><a href="workplace.html" class="basic">Рабочее место оператора</a></li>
+							<li><a href="operator.html" class="basic">Работа прессовщика</a></li>
+							<li><a href="safety.html" class="basic">Техника безопасности и охрана труда</a>
+							</li>
+						</ul>
 						<li><a href="inform.html" class="basic">Полезная информация</a></li>
 					</ul>
 				</aside>

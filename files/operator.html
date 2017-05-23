@@ -7,7 +7,18 @@
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/style.css">
 <script src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
 <script>
+	$(document).ready(function(){
+		
+		$("#accordion").accordion({
+			collapsible: true,
+		});
+		$("#accordion > li").click(function(){
+			var link = $(this).find('a').attr('href');
+			window.location = link;
+		});
+	});
 	$(function() {
 		$(window).scroll(function() {
 			if($(this).scrollTop() != 0) {
@@ -20,6 +31,7 @@
 			$('body,html').animate({scrollTop:0},800);
 		});
 	});
+
 </script>
 </head>
 
@@ -28,22 +40,21 @@
 		<div class="container">
 			<div style="margin-top: 50px;">
 				<aside>
-					<ul class="nav">
+					<ul class="nav" id="accordion">
 						<li><a href="../index.html" class="basic">Главная</a></li>
 						<li><a href="intro.html" class="basic">Введение</a></li>
-						<li><a href="" class="basic">Теоретический раздел</a>
-							<ul class="nav">
-								<li><a href="theory1.html" class="basic">Понятие системы качества и сетрификации трубной продукции</a></li>
-								<li><a href="theory2.html" class="basic">Понятие разрушающего и неразрушающего контроля</a></li>
-								<li><a href="theory3.html" class="basic">Средства и методы контроля качества трубной продукции</a></li>
-								<li><a href="docs.html" class="basic">Нормативная документация</a></li>
-								<li><a href="structure.html" class="basic">Структура гидропресса, порядок испытаний</a></li>
-								<li><a href="workplace.html" class="basic">Рабочее место оператора</a></li>
-								<li><a href="/" class="basic active">Работа прессовщика</a></li>
-								<li><a href="safety.html" class="basic">Техника безопасности и охрана труда</a>
-								</li>
-							</ul>
-						</li>
+						<h3 style="margin: 0px; font-weight: normal; font-size: 16px;"><li><a href="" class="basic">Теоретический раздел</a></li></h3>
+						<ul class="nav">
+							<li><a href="theory1.html" class="basic">Понятие системы качества и сетрификации трубной продукции</a></li>
+							<li><a href="theory2.html" class="basic">Понятие разрушающего и неразрушающего контроля</a></li>
+							<li><a href="theory3.html" class="basic">Средства и методы контроля качества трубной продукции</a></li>
+							<li><a href="docs.html" class="basic">Нормативная документация</a></li>
+							<li><a href="structure.html" class="basic">Структура гидропресса, порядок испытаний</a></li>
+							<li><a href="workplace.html" class="basic">Рабочее место оператора</a></li>
+							<li><a href="/" class="basic active">Работа прессовщика</a></li>
+							<li><a href="safety.html" class="basic">Техника безопасности и охрана труда</a>
+							</li>
+						</ul>
 						<li><a href="inform.html" class="basic">Полезная информация</a></li>
 					</ul>
 				</aside>
@@ -81,24 +92,24 @@
 						<table>
 							<caption>Таблица 1 – размеры технологических манжет по сортаменту НКТ</caption>
 							<tr>
-								<td>Типоразмер трубы, мм</td>
-								<td>Типоразмер передней технологической манжеты, мм</td>
-								<td>Типоразмер задней технологической манжеты, мм</td>
+								<td style="text-align: center;">Типоразмер трубы, мм</td>
+								<td style="text-align: center;">Типоразмер передней технологической манжеты, мм</td>
+								<td style="text-align: center;">Типоразмер задней технологической манжеты, мм</td>
 							</tr>
 							<tr>
-								<td>60</td>
-								<td>73</td>
-								<td>60</td>
+								<td style="text-align: center;">60</td>
+								<td style="text-align: center;">73</td>
+								<td style="text-align: center;">60</td>
 							</tr>
 							<tr>
-								<td>73</td>
-								<td>89</td>
-								<td>73</td>
+								<td style="text-align: center;">73</td>
+								<td style="text-align: center;">89</td>
+								<td style="text-align: center;">73</td>
 							</tr>
 							<tr>
-								<td>89</td>
-								<td>114</td>
-								<td>89</td>
+								<td style="text-align: center;">89</td>
+								<td style="text-align: center;">114</td>
+								<td style="text-align: center;">89</td>
 							</tr>
 						</table>
 					<p>Износ манжет или уплотнительных колец в зажимных головках можно определить визуально по следующим признакам: падение давления (по приборам наблюдения), сильная течь между воронкой и телом головки, сильная течь вдоль трубы из воронки. Определив неисправность, прессовщику необходимо опорожнить установку от труб, выдвинуть неисправную головку, отключить электропитание гидропресса.</p>
